@@ -13,7 +13,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 <<<<<<< HEAD
 		<set-payload value='#["abcd"]' doc:name="Set Payload" doc:id="90e38a87-542a-4481-9e25-b259b44289ce" />
 =======
-		<set-payload value='#["new payload"]' doc:name="Set Payload" doc:id="90e38a87-542a-4481-9e25-b259b44289ce" />
 >>>>>>> 2a9beb1519393b4176a969a848841760fb008499
 		<logger level="INFO" doc:name="Logger" doc:id="5b2e4d19-c515-43fd-b62c-9b16821730cc" message='#["After Setting Payload , the Payload is : " ++ payload]'/>
 	</flow>

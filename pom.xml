@@ -30,6 +30,23 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule.maven.plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<server>${server}</server>
+						<muleVersion>${app.runtime}</muleVersion>
+						<applicationName>${app.name}</applicationName>
+						<workers>${workers}</workers>
+						<workerType>${workerType}</workerType>
+						<environment>${environment}</environment>
+						<ObjectStoreV2>true</ObjectStoreV2>
+					</cloudHubDeployment>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

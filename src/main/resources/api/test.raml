@@ -1,0 +1,13 @@
+#%RAML 1.0
+title: test
+/test:
+  get:
+    queryParameters:
+      currentPage:
+        required: true  
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"message" : "Success"}

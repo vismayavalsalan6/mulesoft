@@ -108,4 +108,4 @@ steps:
 
     sonarQubeRunAnalysis: false
 
-    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DworkerType=$(workerType) -DmuleVersion=$(muleVersion) -DappName=$(app.name)'
+    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DworkerType=$(workerType) -DmuleVersion=$(muleVersion) -DappName=$(appName)'

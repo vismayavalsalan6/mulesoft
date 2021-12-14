@@ -41,7 +41,6 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<applicationName>${app.name}</applicationName>
 						<workers>${workers}</workers>
-						<workerType>${workerType}</workerType>
 						<environment>${environment}</environment>
 						<ObjectStoreV2>true</ObjectStoreV2>
 					</cloudHubDeployment>

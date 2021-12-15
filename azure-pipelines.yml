@@ -7,6 +7,8 @@ trigger:
     include:
 
     - dev
+    - main
+    - master
 
   paths:
 
@@ -106,4 +108,4 @@ steps:
 
     sonarQubeRunAnalysis: false
 
-    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DworkerType=$(workerType) -DmuleVersion=$(muleVersion) -DappName=$(appName)'
+    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DmuleVersion=$(muleVersion) -DappName=$(appName)'
